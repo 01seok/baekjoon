@@ -1,4 +1,4 @@
-def find_set(x):
+def find_set(x):    # union find
     if x == parent[x]:
         return x
 
