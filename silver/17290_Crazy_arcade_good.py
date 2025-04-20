@@ -4,13 +4,13 @@ field = [list(input()) for _ in range(10)]
 r -= 1  # 1번부터 시작하니까 인덱스 번호 맞춰주기
 c -= 1
 
-bomb_row = set()    # 폭탄 있는 행 번호 담기
-bomb_col = set()    # 폭탄 있는 열 번호 담기
+bomb_row = []    # 폭탄 있는 행 번호 담기
+bomb_col = []    # 폭탄 있는 열 번호 담기
 for i in range(10):
     for j in range(10):
         if field[i][j] == 'o':
-            bomb_row.add(i)
-            bomb_col.add(j)
+            bomb_row.append(i)
+            bomb_col.append(j)
 
 min_move = 100
 for i in range(10):
