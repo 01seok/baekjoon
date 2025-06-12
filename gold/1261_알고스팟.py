@@ -2,7 +2,7 @@ import sys
 import heapq
 
 M, N = map(int, input().split())
-maze = [list(map(int, input().split())) for _ in range(N)]
+maze = [list(map(int, input())) for _ in range(N)]
 
 dr = [-1, 1, 0, 0]
 dc = [0, 0, -1, 1]
