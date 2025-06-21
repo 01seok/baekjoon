@@ -1,4 +1,6 @@
 import heapq
+import sys
+input = sys.stdin.readline
 INF = float('inf')
 N = int(input())
 field = [list(map(int, input().split())) for _ in range(N)]
